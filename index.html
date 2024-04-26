@@ -1,11 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>yaorongke</title>
-</head>
-<body>
-    <h1>yaorongke的个人主页</h1>
-    <h1>Hello ~</h1>
-</body>
-</html>
+operator = input("please writing the operator:加法：+，减法：-，乘法：*，除法：/,次方：**:")
+numbers_1 = float(input("please writing the first number: "))
+numbers_2 = float(input("please writing the second number or power numbers: "))
+
+if operator == "+":
+               result = numbers_1 + numbers_2
+elif operator == "-":
+                  result = numbers_1 - numbers_2
+elif operator == "*":
+                result = numbers_1 * numbers_2
+ elif operator == "/":
+               result = numbers_1 / numbers_2
+elif operator == "**":
+    result = numbers_1 ** numbers_2
+else:
+     print("the operator can't use")
+
+print(f"the result is {round(result,2)}")
